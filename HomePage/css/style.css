@@ -353,6 +353,7 @@ nav {
 }
 .updown span {
   cursor: pointer;
+  font-size: 3rem;
 }
 
 .eliminate {
