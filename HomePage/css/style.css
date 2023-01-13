@@ -344,6 +344,9 @@ nav {
 }
 
 .updown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: blue;
   font-size: 1.5rem;
 }
