@@ -1,0 +1,109 @@
+{
+    "allproducts":[
+        {
+            "id":1,
+            "product":"Beef Jerky",
+            "price":"3.25",
+            "type":"all",
+            "image":"https://cdn.discordapp.com/attachments/1044291289249755186/1045396681295941662/0ef847e8-c055-4b1e-9cf0-c09578c4ac26.jpg",
+            "alt":"eat this green"
+        },
+        {
+            "id":2,
+            "product":"Swiss roll",
+            "price":"3",
+            "type":"bread",
+            "image":"https://cdn.discordapp.com/attachments/705443439755657256/1056659058226110565/1671996308336.png",
+            "alt":"eat this green"
+        },
+        {
+            "id":3,
+            "product":"Chia Pudin",
+            "price":"6.99",
+            "type":"healthy",
+            "image":"https://cdn.discordapp.com/attachments/1044291289249755186/1056653973949517914/1671996308346.jpg",
+            "alt":"eat this green"
+        },
+        {
+            "id":4,
+            "product":"Sparkling Soda Grape fruit",
+            "price":"1.80",
+            "type":"soda",
+            "image":"https://cdn.discordapp.com/attachments/1044291289249755186/1056653974146662531/1671996308352.jpg",
+            "alt":"eat this green"
+        },
+        {
+            "id":5,
+            "product":"Spicy Hot Pot Classic",
+            "price":"6.50",
+            "type":"spicy",
+            "image":"https://cdn.discordapp.com/attachments/705443439755657256/1056664057727418428/1671996308359.png",
+            "alt":"eat this green"
+        },
+        {
+            "id":6,
+            "product":"Latiao",
+            "price":"1.99",
+            "type":"spicy",
+            "image":"https://cdn.discordapp.com/attachments/705443439755657256/1056665876092432394/1671999161048.jpg",
+            "alt":"eat this green"
+        },
+        {
+            "id":7,
+            "product":"Red beans donut",
+            "price":"2",
+            "type":"sweet",
+            "image":"https://cdn.discordapp.com/attachments/705443439755657256/1056665876306350120/1671999161055.jpg",
+            "alt":"eat this green"
+        },
+        {
+            "id":8,
+            "product":"Cheese bread",
+            "price":"3",
+            "type":"bread",
+            "image":"https://cdn.discordapp.com/attachments/705443439755657256/1056665876499283978/1671999161066.jpg",
+            "alt":"eat this green"
+        },
+        
+        {
+            "id":9,
+            "product":"Rio Pop Soda",
+            "price":"2.50",
+            "type":"soda",
+            "image":"https://cdn.discordapp.com/attachments/705443439755657256/1056665876738355221/1671999161073.jpg",
+            "alt":"eat this green"
+        },
+        
+        {
+            "id":10,
+            "product":"Chinese bbq beef",
+            "price":"9.95",
+            "type":"spicy",
+            "image":"https://cdn.discordapp.com/attachments/705443439755657256/1056665876914524252/1671999161081.jpg",
+            "alt":"eat this green"
+        },
+        
+        {
+            "id":11,
+            "product":"Roast Duck Thigh",
+            "price":"2.5",
+            "type":"all",
+            "image":"https://cdn.discordapp.com/attachments/705443439755657256/1056665877103263754/1671999161088.jpg",
+            "alt":"eat this green"
+        },
+        
+        {
+            "id":12,
+            "product":"Coconut Ice Powder 210g",
+            "price":"2.99",
+            "type":"sweet",
+            "image":"https://cdn.discordapp.com/attachments/705443439755657256/1056665877338140692/1671999161095.jpg",
+            "alt":"eat this green"
+        }
+        
+        
+        
+    ]
+    
+    
+}

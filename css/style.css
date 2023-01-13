@@ -1,0 +1,507 @@
+* {
+  font-family: "Rowdies", cursive;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.site-header {
+  background-color: rgba(0, 0, 0, 0.85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: rgb(255, 255, 255);
+  transition: color 0.15s ease-in-out;
+}
+.site-header a:hover {
+  color: rgb(236, 13, 13);
+  text-decoration: none;
+}
+
+.nav_shop {
+  font-size: 1.7rem;
+}
+
+.nav_company {
+  margin-top: 0.75rem;
+  cursor: pointer;
+}
+.nav_company a {
+  text-decoration: none;
+}
+
+#shopcar {
+  margin-top: 1rem;
+}
+
+.nav_shop span {
+  position: absolute;
+  font-size: 1.2rem;
+  top: 2px;
+  background-color: red;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 0.5rem;
+  height: 1.8rem;
+  margin-left: 1.2rem;
+}
+
+.canvas_ac {
+  margin-top: 2.5rem;
+}
+
+.acount_bt {
+  background: transparent;
+  border: transparent;
+}
+
+.acount_bt:hover {
+  background: transparent;
+  border: transparent;
+}
+
+#shopcar {
+  cursor: pointer;
+}
+
+.order_offcanvas {
+  cursor: pointer;
+}
+
+.carousel {
+  margin-bottom: 4rem z-index 1;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 32rem;
+}
+
+.carousel-inner {
+  max-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+  background-color: rgb(82, 82, 82);
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.select {
+  min-height: 80px;
+  flex-wrap: wrap;
+}
+
+.types {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 4rem 4rem 0 4rem;
+}
+.types button {
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+.types div {
+  cursor: pointer;
+}
+.types div i {
+  font-size: 2.5rem;
+}
+.types div p {
+  margin-top: 1rem;
+  visibility: hidden;
+  transition: 0.5s;
+}
+.types .all_products {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(123, 123, 123);
+  transition: 0.5s;
+}
+.types .all_products:hover {
+  color: rgb(82, 82, 82);
+  transition: 0.5s;
+}
+.types .all_products:hover p {
+  visibility: visible;
+  transition: 0.5s;
+}
+.types .hot {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(199, 45, 45);
+  transition: 0.5s;
+}
+.types .hot i {
+  transition: 0.5s;
+}
+.types .hot:hover {
+  color: rgb(246, 57, 57);
+  transition: 0.5s;
+  font-size: 2rem;
+}
+.types .hot:hover p {
+  visibility: visible;
+}
+.types .hot:hover i {
+  font-size: 3rem;
+  transition: 0.5s;
+}
+.types .sweet {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: burlywood;
+}
+.types .sweet:hover {
+  color: rgb(199, 149, 79);
+  transition: 0.5s;
+  font-size: 2rem;
+}
+.types .sweet:hover p {
+  visibility: visible;
+}
+.types .sweet:hover i {
+  font-size: 3rem;
+  transition: 0.5s;
+}
+.types .drink {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(46, 171, 171);
+}
+.types .drink:hover {
+  color: rgb(31, 181, 201);
+  transition: 0.5s;
+  font-size: 2rem;
+}
+.types .drink:hover p {
+  visibility: visible;
+}
+.types .drink:hover i {
+  font-size: 3rem;
+  transition: 0.5s;
+}
+.types .medic {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(52, 176, 54);
+}
+.types .medic:hover {
+  color: rgb(8, 137, 51);
+  transition: 0.5s;
+  font-size: 2rem;
+}
+.types .medic:hover p {
+  visibility: visible;
+}
+.types .medic:hover i {
+  font-size: 3rem;
+  transition: 0.5s;
+}
+.types .bread {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(218, 165, 32);
+}
+.types .bread:hover {
+  transition: 0.5s;
+  font-size: 2rem;
+}
+.types .bread:hover p {
+  visibility: visible;
+}
+.types .bread:hover i {
+  font-size: 3rem;
+  transition: 0.5s;
+}
+
+.products {
+  padding: 1rem;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.products .produflex {
+  width: 20rem;
+  margin: 2rem 4rem;
+}
+.products img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 10px;
+  box-shadow: 6px 12px 32px -7px rgba(0, 0, 0, 0.98);
+}
+.products img h1 {
+  color: #333;
+}
+.products .price {
+  font-size: 2rem;
+}
+
+.shop_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 300ms ease-in-out;
+  background-color: rgba(0, 0, 0, 0.6);
+  visibility: hidden;
+  z-index: 4;
+}
+.shop_overlay h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.shopcart {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255);
+  width: 60%;
+  height: 80%;
+  opacity: 0;
+  visibility: hidden;
+  transform: all 300ms ease-in-out;
+  border-radius: 1.5rem;
+  padding: 1.6rem;
+  margin-top: 2rem;
+  overflow-y: scroll;
+}
+
+.shopcart.show {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+.shop_overlay.show {
+  visibility: visible;
+}
+
+.view_item {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 2fr 4fr 2fr 2fr;
+  justify-items: center;
+  margin: 1.5rem 0.5rem 1.5rem 0.5rem;
+}
+.view_item img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 10px;
+}
+.view_item .description {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.updown {
+  color: blue;
+  font-size: 1.5rem;
+}
+.updown p {
+  color: rgb(0, 0, 0);
+  margin: -0.3rem 0 -0.3rem 0;
+}
+.updown span {
+  cursor: pointer;
+}
+
+.eliminate {
+  color: red;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.shop_footer {
+  text-align: center;
+}
+.shop_footer span {
+  color: blue;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.V_product {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 5rem 0 0 0;
+}
+
+.Vimg_product {
+  width: 30rem;
+  border-radius: 1rem;
+  box-shadow: 6px 12px 32px -7px rgba(0, 0, 0, 0.98);
+  margin: 1rem 1rem 1rem 1rem;
+}
+.Vimg_product img {
+  width: 30rem;
+  height: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+
+.title {
+  display: flex;
+  justify-content: space-around;
+}
+
+.price {
+  font-size: 5rem;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 2rem;
+}
+
+footer {
+  background-color: #333;
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+footer p {
+  color: rgb(255, 255, 255);
+  padding: 0.5rem;
+}
+footer p a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 1120px) {
+  .types {
+    margin: 3rem 2rem 0 3rem;
+  }
+  .types div i {
+    font-size: 2rem;
+  }
+  .products {
+    padding: 0;
+  }
+  .Vimg_product {
+    width: 20rem;
+  }
+  .Vimg_product img {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+@media (max-width: 860px) {
+  .products {
+    margin: 0rem;
+  }
+  .products .produflex {
+    width: 20rem;
+    margin: 2rem 2rem;
+  }
+  .products img {
+    width: 15rem;
+  }
+  .shopcart {
+    width: 100%;
+    height: 93%;
+    border-radius: 0;
+  }
+  .view_item img {
+    width: 5rem;
+  }
+  .types div i {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 810px) {
+  .types {
+    margin: 2rem 1rem 0 2rem;
+  }
+}
+@media (max-width: 700px) {
+  .carousel-inner .ad1 {
+    background-image: url("https://i.pinimg.com/736x/2c/cb/f6/2ccbf6ada4ea10bd249a8ba0c59976fc--lipton-creative-advertising.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .carousel-inner .ad1 img {
+    opacity: 0;
+  }
+  .carousel-inner .ad2 {
+    background-image: url("https://media.istockphoto.com/id/1067566856/photo/mexican-pastries.jpg?b=1&s=170667a&w=0&k=20&c=A9mSCDdV1iqDfoKiMEvSpeJ_3anMD5jtWgA1GesK_oI=");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .carousel-inner .ad2 img {
+    opacity: 0;
+  }
+  .carousel-inner .ad3 {
+    background-image: url("https://media.istockphoto.com/id/1165325252/pt/vetorial/light-brown-cream-bubble-tea-with-milk-and-black-tapioca-with-pink-straws-in-a-transparent.jpg?s=170667a&w=0&k=20&c=rdspAJrW9DGTYl3sEqxDufSHH9u4ppJiktkfbCO9fcM=");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .carousel-inner .ad3 img {
+    opacity: 0;
+  }
+}
+@media (max-width: 280px) {
+  .types {
+    margin: 1rem 0rem 0 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */
