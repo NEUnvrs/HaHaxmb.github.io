@@ -263,6 +263,11 @@ nav {
   width: 20rem;
   margin: 2rem 4rem;
 }
+.products .produflex .prod {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .products img {
   -o-object-fit: cover;
      object-fit: cover;
