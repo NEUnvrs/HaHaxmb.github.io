@@ -117,6 +117,7 @@ class mainUI {
           </div>`
 
         cartCenter.appendChild(div)
+        
     }
     setItemValues(shopcart) {
         let Total = 0;
