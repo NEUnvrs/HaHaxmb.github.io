@@ -1,21 +1,13 @@
-// product_center
+
 const productDOM = document.querySelector('#products')
-// carrito_icon
 const OpenCart = document.querySelector('.nav_shopcart')
-// overlay
 const overlay = document.querySelector('.shop_overlay')
 const shopDom = document.querySelector('.shopcart')
-// shopcart close
 const closeCart = document.querySelector('.shopcart_close')
-// carritocenter
 const cartCenter = document.querySelector('.viewcenter')
-// item total
 const itemsPopup = document.querySelector('.popupItems')
-// removeCart 
 const removeCart = document.querySelector('.removeCart')
-// carrito total 
 const totalitems = document.querySelector('.total_items')
-// 
 const allproductView = document.getElementById('details')
 
 
@@ -60,12 +52,12 @@ class mainUI {
             const id = button.dataset.id;
             const incar = shopcart.find(item => item.id === parseInt(id, 10));
             if (incar) {
-                button.innerHTML = "added chek out!"
+                button.innerHTML = "added check out!"
                 button.disabled = true
             }
             button.addEventListener("click", statu => {
                 statu.preventDefault();
-                statu.target.innerHTML = "added chek out!"
+                statu.target.innerHTML = "added check out!"
                 statu.target.disabled = true
 
                 const shopItem = { ...Storage.getProduct(id), quantity: 1 }
