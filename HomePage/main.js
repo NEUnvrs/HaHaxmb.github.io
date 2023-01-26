@@ -76,7 +76,7 @@ class mainUI {
 
 
 
-    addShopcarItem({ id, product, price, image, alt }) {
+    addShopcarItem({ id, product, price, image, alt, quantity }) {
         const div = document.createElement('div');
         div.classList.add('view_item')
 
@@ -97,7 +97,7 @@ class mainUI {
             <span class="increase" data-id="${id}">
               <i class="fa-solid fa-caret-up"></i>
             </span>
-            <p class="itemQuantity">1</p>
+            <p class="itemQuantity">${quantity}</p>
             <span class="decrease" data-id="${id}">
               <i class="fa-solid fa-caret-down"></i>
             </span>
