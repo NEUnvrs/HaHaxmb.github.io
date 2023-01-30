@@ -48,7 +48,7 @@ class mainUI {
     buttons() {
         const buttons = [...document.querySelectorAll('.addcar')];
         buttonDOM = buttons;
-        buttons.forEach(button => {
+        buttons.forEach((button) => {
             const id = button.dataset.id;
             const incar = shopcart.find(item => item.id === parseInt(id, 10));
             if (incar) {
@@ -56,10 +56,12 @@ class mainUI {
                 button.disabled = true
                 
             }
-            button.addEventListener("click", statu => {
-                statu.preventDefault();
-                statu.target.innerHTML = "added check out!"
-                statu.target.disabled = true
+            button.addEventListener("click", event => {
+                event.preventDefault();
+                event.target.innerHTML = "added check out!"
+                event.target.disabled = true
+                
+                
 
                 const shopItem = { ...Storage.getProduct(id), quantity: 1 }
 
@@ -199,7 +201,7 @@ class mainUI {
     }
 
     removeItem(id) {
-        shopcart = shopcart.filter(element => element.id !== id)
+        shopcart = shopcart.filter(element => element.id !== id);
         this.setItemValues(shopcart);
         Storage.autoSave(shopcart)
 
