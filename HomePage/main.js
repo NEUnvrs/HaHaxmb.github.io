@@ -241,7 +241,7 @@ class mainUI {
         dolor sit amet consectetur adipisicing elit. Sint at quam, soluta ipsam fugit hic odio quidem aut autem numquam
         quasi eaque iure non sit alias voluptatem minima ducimus animi.</p>
       <div class="adshopcar">
-      <button href="" data-id="${product.id}" class="btn btn-primary addcar">add to shop list<i class="fa-solid fa-cart-arrow-down"></i></button>
+      <button href="" data-id="${product.id}" class="btn btn-primary addcar">add to shop list</button>
       </div>
     </div>`
         });
