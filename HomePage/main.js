@@ -37,7 +37,7 @@ class mainUI {
             </div>
             <div class="bt ">
                 <a href="productDetails.html?id=${element.id}" class="btn btn-primary">details</a>
-                <button data-id="${element.id}" class="btn btn-primary addcar">add to shop list<i class="fa-solid fa-cart-arrow-down"></i></button>
+                <button data-id="${element.id}" class="btn btn-primary addcar">add to shop list</button>
             </div>
           </div>
         </div>`
