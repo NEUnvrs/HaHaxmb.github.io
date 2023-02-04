@@ -150,8 +150,8 @@ class mainUI {
             this.hide()
         })
 
-        cartCenter.addEventListener("click", re => {
-            const target = re.target.closest("span")
+        cartCenter.addEventListener("click", event => {
+            const target = event.target.closest("span")
             const targetElement = target.classList.contains("eliminate")
             if (!target) return
             if (targetElement) {
