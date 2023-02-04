@@ -275,7 +275,6 @@ function filterspy() {
     spi = document.getElementById("spi").value;
     if (spi.length > 0) {
         const filt = filtred.filter(value => value.type === spi);
-        console.log(filt)
         ui.renderproducts(filt)
         ui.buttons()
     }
@@ -286,7 +285,6 @@ function filtersweet() {
     sweet = document.getElementById("sweet").value;
     if (sweet.length > 0) {
         const filt = filtred.filter(value => value.type === sweet);
-        console.log(filt)
         ui.renderproducts(filt)
         ui.buttons()
     }
@@ -297,7 +295,6 @@ function filtersoda() {
     soda = document.getElementById("soda").value;
     if (soda.length > 0) {
         const filt = filtred.filter(value => value.type === soda);
-        console.log(filt)
         ui.renderproducts(filt)
         ui.buttons()
     }
@@ -308,7 +305,6 @@ function filterhealth() {
     health = document.getElementById("health").value;
     if (health.length > 0) {
         const filt = filtred.filter(value => value.type === health);
-        console.log(filt)
         ui.renderproducts(filt)
         ui.buttons()
     }
