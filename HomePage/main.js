@@ -256,8 +256,6 @@ let health = "";
 let bread = "";
 
 
-let filtred = [];
-
 
 function defaulttype() {
     const ui = new mainUI();
@@ -337,6 +335,7 @@ class Storage {
 }
 
 
+let filtred = [];
 
 class Products {
     async getProducts() {
