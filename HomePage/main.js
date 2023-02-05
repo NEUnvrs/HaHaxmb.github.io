@@ -15,6 +15,50 @@ let shopcart = []
 let buttonDOM = []
 
 
+let filtred = [];
+
+class Products {
+    async getProducts() {
+        try {
+            const result = await fetch("products.json");
+            const data = await result.json();
+            const products = data.allproducts
+            
+            return products
+
+        }
+        catch (err) {
+            console.log(err);
+        }
+    }
+}
+const query = new URLSearchParams(window.location.search)
+let id = query.get('id')
+
+
+document.addEventListener("DOMContentLoaded", async () => {
+    const productList = new Products();
+    const ui = new mainUI();
+
+    ui.setAPP();
+
+    filtred = await productList.getProducts();
+    if (id) {
+        ui.productdetails(id)
+        Storage.saveProduct(filtred);
+        ui.buttons();
+        ui.allcartfunction();
+    }
+    else {
+    ui.renderproducts(filtred);
+    Storage.saveProduct(filtred);
+    ui.buttons();
+    ui.allcartfunction();
+    }
+
+})
+
+
 class mainUI {
     renderproducts(productList) {
         let uishow = ""
@@ -335,48 +379,6 @@ class Storage {
 }
 
 
-let filtred = [];
-
-class Products {
-    async getProducts() {
-        try {
-            const result = await fetch("products.json");
-            const data = await result.json();
-            const products = data.allproducts
-            
-            return products
-
-        }
-        catch (err) {
-            console.log(err);
-        }
-    }
-}
-const query = new URLSearchParams(window.location.search)
-let id = query.get('id')
-
-
-document.addEventListener("DOMContentLoaded", async () => {
-    const productList = new Products();
-    const ui = new mainUI();
-
-    ui.setAPP();
-
-    filtred = await productList.getProducts();
-    if (id) {
-        ui.productdetails(id)
-        Storage.saveProduct(filtred);
-        ui.buttons();
-        ui.allcartfunction();
-    }
-    else {
-    ui.renderproducts(filtred);
-    Storage.saveProduct(filtred);
-    ui.buttons();
-    ui.allcartfunction();
-    }
-
-})
 
 
 
