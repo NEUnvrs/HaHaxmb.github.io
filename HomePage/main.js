@@ -94,7 +94,7 @@ class mainUI {
         buttonDOM = buttons;
         buttons.forEach((button) => {
             const id = button.dataset.id;
-            const incar = shopcart.find(item => item.id === parseInt(id, 10));
+            const incar = shopcart.find(item => item.id === parseInt(id));
             if (incar) {
                 button.innerHTML = "added check out!"
                 button.disabled = true
@@ -203,7 +203,7 @@ class mainUI {
                 cartCenter.removeChild(target.parentElement.parentElement)
             }
             else if (target.classList.contains("increase")) {
-                const id = parseInt(target.dataset.id, 10)
+                const id = parseInt(target.dataset.id)
                 let item = shopcart.find(element => element.id === id)
                 item.quantity++;
                 Storage.autoSave(shopcart)
@@ -213,7 +213,7 @@ class mainUI {
 
             }
             else if (target.classList.contains("decrease")) {
-                const id = parseInt(target.dataset.id, 10)
+                const id = parseInt(target.dataset.id)
                 let item = shopcart.find(element => element.id === id)
                 item.quantity--
 
