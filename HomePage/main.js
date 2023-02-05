@@ -153,7 +153,6 @@ class mainUI {
         cartCenter.addEventListener("click", event => {
             const target = event.target.closest("span")
             const targetElement = target.classList.contains("eliminate")
-            if (!target) return
             if (targetElement) {
                 const id = parseInt(target.dataset.id)
                 this.removeItem(id)
